@@ -34,6 +34,7 @@ The suite consists of three main components:
 
 *   **Python**: Version 3.7 or higher recommended.
 *   **Nebius AI Studio Account**: You need an account with Nebius AI Studio ([https://nebius.ai/](https://nebius.ai/)) to obtain an API key.
+*   **It should be possible to simply replace the Nebius API with another service that is compatible with OpenAI.**
 *   **API Key**: A valid Nebius API key is required to interact with the LLM.
 
 ## Installation
