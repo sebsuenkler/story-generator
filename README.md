@@ -7,7 +7,7 @@ The suite consists of three main components:
 
 1.  **`idea_generator.py`**: Generates a list of story proposals (title, prompt, setting, genre, target word count) based on user-specified genres.
 2.  **`story_generator.py`**: Takes a detailed prompt, setting, title, and word count to generate a full story, optionally splitting it into chapters for longer narratives and focusing on writing quality.
-3.  **`main_app.py`**: Orchestrates the process by first running the idea generator, allowing the user to select a proposal, and then invoking the story generator to write the chosen story.
+3.  **`app.py`**: Orchestrates the process by first running the idea generator, allowing the user to select a proposal, and then invoking the story generator to write the chosen story.
 
 ## Live-Demo
 
@@ -35,7 +35,7 @@ The suite consists of three main components:
 
 ## Installation
 
-1.  **Clone or Download:** Get the script files (`main_app.py`, `idea_generator.py`, `story_generator.py`) and place them in the same directory.
+1.  **Clone or Download:** Get the script files (`app.py`, `idea_generator.py`, `story_generator.py`) and place them in the same directory.
     ```bash
     # If using git
     git clone <your-repo-url>
@@ -66,7 +66,7 @@ The scripts require your Nebius API key. You can provide it in one of two ways:
 
 2.  **Command-Line Argument:** You can pass the API key directly using the `--api-key` argument when running any of the scripts.
     ```bash
-    python main_app.py --api-key "YOUR_NEBIUS_API_KEY_HERE" ...
+    python app.py --api-key "YOUR_NEBIUS_API_KEY_HERE" ...
     ```
 
 **Note:** Using the command-line argument will override the `.env` file if both are present.
@@ -75,12 +75,12 @@ The scripts require your Nebius API key. You can provide it in one of two ways:
 
 You can either use the main application for the full workflow or run the individual generator scripts.
 
-### 1. Running the Main Application (`main_app.py`)
+### 1. Running the Main Application (`app.py`)
 
 This is the recommended way to use the suite for the combined idea-to-story workflow.
 
 ```bash
-python main_app.py [OPTIONS]
+python app.py [OPTIONS]
 ```
 #### Key Options:
 ```bash
@@ -106,7 +106,7 @@ The final story is generated and saved to the `--output-dir`.
 **Generate 5 English fantasy/cyberpunk ideas, auto-save them, then select one to write and save the story to my_output:** 
 
 ```bash
-python main_app.py --lang en --genres Fantasy Cyberpunk --count 5 --auto-save-ideas --output-dir ./my_output
+python app.py --lang en --genres Fantasy Cyberpunk --count 5 --auto-save-ideas --output-dir ./my_output
 ```
 
 ### 2. Running the Idea Generator Standalone (idea_generator.py)
