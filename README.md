@@ -27,6 +27,9 @@ The suite consists of three main components:
     *   Generated stories (including plot outlines for chapter mode) are saved as `.txt` files.
 *   **Standalone Use**: Both `idea_generator.py` and `story_generator.py` can be run independently.
 
+## Note
+* Result quality varies based on the specific LLM model and the prompt.
+
 ## Prerequisites
 
 *   **Python**: Version 3.7 or higher recommended.
