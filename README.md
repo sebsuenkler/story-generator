@@ -11,7 +11,7 @@ The suite consists of three main components:
 
 ## Live-Demo
 
-[https://suenkler-ai.de/summarizer](https://suenkler-ai.de/story-generator)
+[[https://suenkler-ai.de/summarizer](https://suenkler-ai.de/story-generator)](https://suenkler-ai.de/story-generator)
 
 ## Features
 
