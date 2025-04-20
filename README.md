@@ -83,6 +83,7 @@ This is the recommended way to use the suite for the combined idea-to-story work
 python main_app.py [OPTIONS]
 ```
 #### Key Options:
+```bash
 --lang CODE, --language CODE: Language code for idea generation and story writing (de or en). Default: de.
 --genres GENRE [GENRE ...]: Specify genres for idea generation (e.g., --genres "Science Fiction" Fantasy). Defaults to a predefined list if omitted.
 --count NUM: Number of story ideas to generate. Default: 3.
@@ -91,7 +92,7 @@ python main_app.py [OPTIONS]
 --proposals-folder PATH: Folder where idea .txt files are stored (used by --auto-save-ideas). Default: ./proposals.
 --auto-save-ideas: Automatically save all generated ideas as .txt files in the proposals folder.
 --debug: Enable detailed debug logging.
-
+```
 #### Workflow:
 The script generates story ideas using `idea_generator.py`.
 Generated ideas are displayed.
@@ -115,6 +116,7 @@ Use this if you only want to generate story ideas and save their details.
 python idea_generator.py [OPTIONS]
 ```
 #### Key Options:
+```bash
 --lang CODE: Language code (de or en). Default: de.
 --genres GENRE [GENRE ...]: Genres for idea generation.
 --count NUM: Number of ideas. Default: 3.
@@ -126,6 +128,7 @@ python idea_generator.py [OPTIONS]
 --select: After generating, prompt interactively to choose an idea.
 --execute: If an idea is selected (interactively or randomly), attempt to run story_generator.py as a subprocess with the chosen idea's details.
 --debug: Enable debug logging.
+```
 
 #### Examples:
 1. Generate 4 German mystery ideas and save them automatically
@@ -144,6 +147,7 @@ Use this if you already have a specific prompt, setting, and title and want to g
 python story_generator.py [OPTIONS]
 ```
 #### Key Options:
+```bash
 --prompt TEXT: Required. The main plot idea or premise.
 --setting TEXT: Required. Description of the story's setting (place, time, atmosphere).
 --title TEXT: Required. The title for the story.
@@ -156,6 +160,7 @@ python story_generator.py [OPTIONS]
 --output-dir PATH: Directory to save the story and outline files. Default: . (current directory).
 --no-chapter-mode: Disable automatic chapter splitting for long stories.
 --debug: Enable debug logging.
+```
 
 #### Example:
 **Generate a ~2000 word English story and save it** 
